@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Glyn's Gardening Service | Cardiff &amp; South Wales Gardeners</title>
+  <meta name="description" content="Professional gardening and landscaping services across Cardiff and South Wales from Llantrisant to St Mellons. Grass cutting, fencing, decking, jet washing and more. Free quotes available.">
+  <meta name="keywords" content="gardening service Cardiff, gardener South Wales, landscaping Cardiff, hedge trimming Cardiff, decking Cardiff, fencing Cardiff, garden maintenance Llantrisant, gardener Pontypridd, gardening St Mellons, jet washing Cardiff">
+  <meta name="author" content="Glyn's Gardening Service">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.glynsgardeningservices.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.glynsgardeningservices.com/">
+  <meta property="og:title" content="Glyn's Gardening Service | Cardiff &amp; South Wales">
+  <meta property="og:description" content="Professional gardening and landscaping across Cardiff and South Wales. Grass cutting, fencing, decking, jet washing and more. Free quotes available.">
+  <meta property="og:image" content="https://www.glynsgardeningservices.com/images/collage.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Glyn's Gardening Service">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Glyn's Gardening Service | Cardiff &amp; South Wales">
+  <meta name="twitter:description" content="Professional gardening and landscaping across Cardiff and South Wales. Free quotes available.">
+  <meta name="twitter:image" content="https://www.glynsgardeningservices.com/images/collage.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS (loaded here so the map has styles before JS fires) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVKJGWBKRN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FVKJGWBKRN');
+  </script>
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Glyn's Gardening Service",
+    "description": "Professional gardening and landscaping services across Cardiff and South Wales, covering Llantrisant to St Mellons.",
+    "url": "https://www.glynsgardeningservices.com",
+    "email": "g.g.services@outlook.com",
+    "image": "https://www.glynsgardeningservices.com/images/collage.jpg",
+    "priceRange": "££",
+    "areaServed": [
+      "Llantrisant","Pontyclun","Talbot Green","Pontypridd",
+      "Caerphilly","Cardiff","Roath","Canton","Penarth",
+      "Barry","Rumney","St Mellons"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "South Wales",
+      "addressCountry": "GB"
+    },
+    "sameAs": ["https://www.facebook.com"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Gardening Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Grass Cutting & Hedge Trimming"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fencing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Decking"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Garden Furniture & Flowerbeds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jet Washing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outdoor Painting"}}
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

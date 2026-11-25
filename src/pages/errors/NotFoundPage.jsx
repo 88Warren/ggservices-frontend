@@ -1,9 +1,4 @@
 const NotFoundPage = () => {
-  const scrollToTop = (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-8 py-24">
       <p className="text-[0.8rem] font-semibold tracking-[0.12em] uppercase text-[#4cbb6c] mb-4">

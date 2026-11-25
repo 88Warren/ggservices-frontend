@@ -21,6 +21,9 @@ RUN npm run build
 # ── Stage 2: serve ────────────────────────────────────────────
 FROM nginx:1.28-alpine
 
+# Upgrade all packages to pick up latest Alpine security patches
+RUN apk upgrade --no-cache
+
 # Remove default nginx page
 RUN rm -rf /usr/share/nginx/html/*
 

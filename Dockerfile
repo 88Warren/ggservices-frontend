@@ -19,9 +19,11 @@ COPY . .
 RUN npm run build
 
 # ── Stage 2: serve ────────────────────────────────────────────
-FROM nginx:1.28-alpine
+# nginx:stable-alpine tracks the current stable release with up-to-date Alpine packages.
+# nginx:1.28-alpine is frozen at an older Alpine index that lacks the patched nginx builds.
+FROM nginx:stable-alpine
 
-# Upgrade all packages to pick up latest Alpine security patches
+# Upgrade all packages to pick up any Alpine security patches not yet in the base image
 RUN apk upgrade --no-cache
 
 # Remove default nginx page
